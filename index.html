@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Operating System Project</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">OS LAB</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="docs.html">DOCS</a></li>
+                    <li><a href="./backend/ganttcharts.html">SIMULATOR</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>
+                Process Scheduling Simulator
+            </h1>
+            <p>
+                Virtual lab for all type of CPU Scheduling Algorithms which will help you to understand algorithm in a better way.
+
+                <br>Start Simulation Now
+            </p>
+            <a href="docs.html" class="hero-btn">GET STARTED</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Need of Algorithm</h1>
+
+        <div class="row" data-aos="zoom-in-up">
+            <div class="course-colomn" >
+                <h3>CPU Utilization</h3>
+                <hr>
+                <p>CPU scheduling is a process that allows one process to use the CPU while the execution of another process is on hold due to unavailability of any resource like I/O etc, thereby making full use of CPU. The aim of CPU scheduling is to maximize CPU utilization by making the system efficient, fast, and fair.</p>
+            </div>
+            <div class="course-colomn" >
+                <h3>Max Performance</h3>
+                <hr>
+                <p>To make out the best use of the CPU and not to waste any CPU cycle, the CPU would be working most of the time(Ideally 100% of the time). Considering a real system, CPU usage should range from 40% (lightly loaded) to 90% (heavily loaded.)</p>
+            </div>
+            <div class="course-colomn" >
+                <h3>Time Minimization</h3>
+                <hr>
+                <p>There are many very different types of algorithms for different different tasks. By using them we can minimize waiting time, response time and turnaround time of processes. like turnaround time is minimized if most processes finish their next cpu burst within one time quantum.</p>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="blog">
+        <div class="blog-heading">
+            <h1>Popular Blogs</h1>
+        </div>
+
+        <div class="blog-container" data-aos="zoom-in-up">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_3.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.fusion-reactor.com/blog/multithreading-and-multiprocessing/#:~:text=A%20multiprocessing%20system%20has%20more,runs%20parallel%20to%20each%20other." class="blog-title">Multithreading vs Multiprocessing</a>
+                    <p>In Multiprocessing, many processes are executed simultaneously. While in multithreading, many threads of...</p>
+                    <a href="https://www.fusion-reactor.com/blog/multithreading-and-multiprocessing/#:~:text=A%20multiprocessing%20system%20has%20more,runs%20parallel%20to%20each%20other." id="more">Read More...</a>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_4.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.eletimes.com/microprocessor-vs-microcontroller-what-is-the-difference#:~:text=Ultimately%2C%20microcontrollers%20and%20microprocessors%20are,that%20connects%20to%20external%20peripherals." class="blog-title">Microcontroller vs Microprocessor</a>
+                    <p>Microcontrollers and Microprocessors are different ways of organizing and optimizing a...</p>
+                    <a href="https://www.eletimes.com/microprocessor-vs-microcontroller-what-is-the-difference#:~:text=Ultimately%2C%20microcontrollers%20and%20microprocessors%20are,that%20connects%20to%20external%20peripherals." id="more">Read More...</a>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_1.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.crucial.in/articles/about-memory/what-is-the-difference-between-ram-and-rom#:~:text=RAM%20is%20volatile%20memory%20that,Find%20out%20more%20about%20RAM." class="blog-title">Difference between RAM and ROM</a>
+                    <p>RAM is a volatile memory that temporarily stores the files you are working on. ROM is non-volatile... </p>
+                    <a href="https://www.crucial.in/articles/about-memory/what-is-the-difference-between-ram-and-rom#:~:text=RAM%20is%20volatile%20memory%20that,Find%20out%20more%20about%20RAM." id="more">Read More...</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-container" data-aos="zoom-in-up">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_5.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.tutorialspoint.com/semaphores-in-operating-system" class="blog-title">What is Semaphore?</a>
+                    <p>A semaphore is a variable or abstract data type used to control access to a common resource by...</p>
+                    <a href="https://www.tutorialspoint.com/semaphores-in-operating-system" id="more">Read More...</a>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_6.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/" class="blog-title">What is Deadlock?</a>
+                    <p>A deadlock is a condition that may happen in a system composed of multiple processes that can access...</p>
+                    <a href="https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/" id="more">Read More...</a>
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="./images/CPU Scheduling_7.PNG" alt="Blog">
+                </div>
+
+                <div class="blog-text">
+                    <a href="https://www.techopedia.com/definition/1115/storage#:~:text=Storage%20is%20a%20process%20through,data%2C%20either%20temporarily%20or%20permanently." class="blog-title">What is Storage ?</a>
+                    <p>Storage is a process through which digital data is saved within a data storage device by means of...</p>
+                    <a href="https://www.techopedia.com/definition/1115/storage#:~:text=Storage%20is%20a%20process%20through,data%2C%20either%20temporarily%20or%20permanently." id="more">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta" data-aos="zoom-in-up">
+        <h1>Learn about all types Algorithms<br> Click Below!</h1>
+        <a href="./docs.html" class="hero-btn">Click Here</a>
+    </section>
+
+    <section class="footer">
+        <div class="icons">
+            <a href="https://github.com/AmazingSpiderman24"><i class="fab fa-github social-media-icon"></i></a>
+            <a href="https://www.linkedin.com/in/shray-bijalwan-207926288"><i class="fab fa-linkedin-in social-media-icon"></i></a>
+            <a href="mailto: shraybijalwan24@gmail.com"><i class="fas fa-envelope social-media-icon"></i></a>    
+        </div>
+            
+        <p>Made With <i class="far fa-heart"></i> by OS_SE_IV_06</p>
+        <p> <i class="fa fa-copyright"></i> copyright 2025 | All rights reserved</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        function gotoDocs(){
+            location.href = ("docs.html");
+        }
+    </script>
+
+    <!-- animation for cards -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100, // offset (in px) from the original trigger point
+        duration: 800
+      }
+      );
+    </script>
+</body>
+
+</html>

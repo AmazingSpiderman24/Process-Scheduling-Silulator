@@ -1,0 +1,108 @@
+.container_docs {
+    height: auto;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff7675, #81ecec, #55efc4);
+    border-radius: 20px;
+    width: 80%;
+    margin: 50px auto 10px auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    font-family: inherit; /* Keeping the original font */
+}
+
+/* Lighter Animated Gradient Border */
+.container_docs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff7675, #81ecec, #f8d67a, #7a89ff, #55efc4);
+    background-size: 500% 500%;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3; /* Making the gradient border slightly softer */
+    animation: gradientMove 5s infinite alternate;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container_docs h1 {
+    font-size: 42px; /* Increased from 36px */
+    margin-top: 10px;
+    font-weight: 700;
+    color: #2c3e50;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container_docs p {
+    margin-left: 5px;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 20px; /* Increased from 'medium' */
+    padding-bottom: 50px;
+    line-height: 34px; /* Slightly increased for better readability */
+    color: #34495e;
+    opacity: 1; /* Ensuring text is visible */
+    transform: none;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* List Styling */
+.container_docs li {
+    text-align: left;
+    line-height: 34px; /* Increased from 30px */
+    font-size: 18px; /* Increased for better readability */
+    margin-left: 15px;
+    color: #2c3e50;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.container_docs li:hover {
+    transform: translateX(10px);
+    color: #e74c3c;
+}
+
+/* Special List Items */
+.special li {
+    line-height: 28px; /* Slightly larger */
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+/* Bold Text */
+.container_docs blod {
+    font-weight: 900;
+    color: #e84118;
+    font-size: 20px; /* Increased font size for bold text */
+}
+
+/* Cool Hover Effect */
+.container_docs:hover {
+    box-shadow: 0 0 40px rgba(231, 76, 60, 0.5);
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+}
+.container_docs {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Soft white border */
+}
